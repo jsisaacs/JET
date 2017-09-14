@@ -1,6 +1,9 @@
 //Joshua Isaacson
 
 import java.util.Scanner;
+import de.vandermeer.asciitable.*;
+import javafx.scene.text.TextAlignment;
+
 
 public class ExerciseUI {
     public static void main(String[] args) {
@@ -56,7 +59,5 @@ public class ExerciseUI {
                 "    add()\n" +
                 "    clear()\n" +
                 "    viewMyList()\n");
-
-
     }
 }
