@@ -38,5 +38,6 @@ public class ExerciseTest {
         exerciseList.clear();
 
         //System.out.println(viewMyList(exerciseList));
+
     }
 }

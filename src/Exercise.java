@@ -76,12 +76,4 @@ public class Exercise {
         return notes;
     }
 
-    //viewMyList() returns a String output of all the current Exercise objects
-    //also outputs setsXreps, date, and weights if available
-    public void viewMyList(List list) {
-
-    }
-
-
-
 }
