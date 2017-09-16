@@ -125,5 +125,7 @@ public class ExerciseUI {
             System.out.println("Object = " + exercise);
         }
 
+        help();
+
     }
 }
