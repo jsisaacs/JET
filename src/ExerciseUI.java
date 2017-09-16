@@ -119,7 +119,7 @@ public class ExerciseUI {
 
         //delete a specific object in the list based on its name
 
-
+n
         //prints out the objects
         for (Exercise exercise : exerciseList) {
             System.out.println("Object = " + exercise);
