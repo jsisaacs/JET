@@ -5,11 +5,12 @@ import java.util.List;
 
 public class ExerciseTest {
     public static void main(String[] args) {
+        /*
         //creates Exercise object
-        Exercise ex1 = new Exercise("Squat");
-        Exercise ex2 = new Exercise("Bench Press");
+        Exercise ex1 = new Exercise();
+        Exercise ex2 = new Exercise();
 
-        System.out.println("Exercise: " + ex1.getExercise());
+        //System.out.println("Exercise: " + ex1.getExercise());
 
         ex1.setWeight(275);
         System.out.println("Weight: " + ex1.getWeight());
@@ -38,6 +39,6 @@ public class ExerciseTest {
         exerciseList.clear();
 
         //System.out.println(viewMyList(exerciseList));
-
+        */
     }
 }

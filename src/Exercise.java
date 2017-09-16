@@ -14,9 +14,13 @@ public class Exercise {
     String notes;
 
     //constructor for an Exercise object
-    public Exercise(String exercise) {
-        this.exerciseName = exercise;
+    public Exercise() {
         weightUsed = 0;
+    }
+
+    //setExercise() changes value of exerciseName
+    public void setExercise(String exerciseName) {
+        this.exerciseName = exerciseName;
     }
 
     //getExercise() returns the exerciseName for the Exercise
@@ -56,13 +60,13 @@ public class Exercise {
         return repetitions;
     }
 
-    //setDay() in string form, e.g., "Sept 12, 2017"
-    public void setDay(String day) {
+    //setDate() in string form, e.g., "Sept 12, 2017"
+    public void setDate(String day) {
         this.day = day;
     }
 
-    //getDay() returns day
-    public String getDay() {
+    //getDate() returns day
+    public String getDate() {
         return day;
     }
 
