@@ -70,6 +70,7 @@ public class ExerciseUI {
     //Method getInstance() creates an instance of Exercise when called.
     //Follows the Singleton design pattern
     public static Exercise getInstance() {
+        //TODO
         if (instance == null) {
             instance = new Exercise();
         }
@@ -81,13 +82,12 @@ public class ExerciseUI {
     //Parameter: -e
     public static void newExercise(String exercise, int sets, int reps, int weight, String date) {
         //TODO
-
         //adds properties to the Exercise object
-        instance.setExercise(exercise);
-        instance.changeSets(sets);
-        instance.changeReps(reps);
-        instance.setWeight(weight);
-        instance.setDate(date);
+        getInstance().setExercise(exercise);
+        getInstance().changeSets(sets);
+        getInstance().changeReps(reps);
+        getInstance().setWeight(weight);
+        getInstance().setDate(date);
 
         //add the Exercise object to exerciseList
         exerciseList.add(instance);
@@ -97,27 +97,21 @@ public class ExerciseUI {
     //with the setNotes() method.
     //Parameter: -n
     public static void addNote(Exercise object, String input) {
-        //TODO
-        /*
-        (1) takes object input and finds equivalent Exercise object in the exerciseList
-        (2) object.setNotes(input)
-         */
-        //if () {
-        //    object.setNotes(input);
-        //}
+        if (exerciseList.contains(object)){
+            object.setNotes(input);
+        }
+        else {
+            System.out.println("That note doesn't have notes yet.");
+        }
     }
 
 
     //Method deleteExercise() takes in user input for an object name and removes it from the
     //ArrayList, exerciseList.
     //Parameter: -d
-    public static void deleteExercise(String object, List input) {
-        //TODO
-        /*
-        (1) find name of Exercise object in the ArrayList, exerciseList
-        (2) remove object from ArrayList, exerciseList
-         */
-        }
+    public static void deleteExercise(Exercise objectName) {
+        exerciseList.remove(objectName);
+    }
 
     //Method clearExercise() removes all elements from the ArrayList, exerciseList.
     //Parameter: -c
@@ -136,31 +130,20 @@ public class ExerciseUI {
         to build the spreadsheet, you need the number of Exercise obj = rows
         (1) takes
          */
+        AsciiTable table = new AsciiTable();
+        //String exercise, int sets, int reps, int weight, String date
+        table.addRule();
+        table.addRow("Exercise", "Sets", "Reps", "Weight", "Date", "Notes");
+        table.addRule();
+        //table.addRow();
+        //table.addRule();
+
+        String render = table.render();
+        System.out.println(render);
     }
 
     public static void main(String[] args) {
-        //create Exercise objects
-        Exercise ex1 = new Exercise();
-        Exercise ex2 = new Exercise();
-
-        //adds objects to exerciseList
-        exerciseList.add(ex1);
-        exerciseList.add(ex2);
-
-        exerciseList.add(getInstance());
-        exerciseList.add(getInstance());
-
-        //newExercise("pullups", 3, 10, 0, "9/16/17");
-
-        //delete a specific object in the list based on its name
-
-
-        //prints out the objects
-
-        for (Exercise exercise : exerciseList) {
-            System.out.println("Object = " + exercise);
-        }
-
+        spreadsheet();
 
     }
 }
