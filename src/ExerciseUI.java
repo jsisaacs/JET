@@ -1,16 +1,14 @@
 //Joshua Isaacson, Fall 2017
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
-
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import de.vandermeer.asciitable.*;
-import javafx.scene.text.TextAlignment;
+import com.beust.jcommander.JCommander;
+import com.beust.jcommander.Parameter;
 
-//All the commands in the 'HELP DESK' table will be implemented here.
-//They use the business logic implemented in the Exercise class.
+
+//This class takes the business logic from Exercise.java and creates the UI that the user
+//interacts with.
 
 public class ExerciseUI {
 
@@ -143,7 +141,12 @@ public class ExerciseUI {
     }
 
     public static void main(String[] args) {
-        spreadsheet();
+        ExerciseUI exUI = new ExerciseUI();
+        new JCommander();
+        exUI.run();
+    }
 
+    public void run() {
+        //TODO
     }
 }
