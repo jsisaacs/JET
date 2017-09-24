@@ -2,9 +2,9 @@
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import de.vandermeer.asciitable.*;
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
 
 
 //This class takes the business logic from Exercise.java and creates the UI that the user
@@ -63,40 +63,32 @@ public class ExerciseUI {
                    "+---------------------------------------------------------+-----------------------+\n");
     }
 
-    static Exercise instance = null;
-
-    //Method getInstance() creates an instance of Exercise when called.
-    //Follows the Singleton design pattern
-    public static Exercise getInstance() {
-        //TODO
-        if (instance == null) {
-            instance = new Exercise();
-        }
-        return instance;
+    //Method newInstance() creates an instance of Exercise when called.
+    public static void newInstance() {
+        exerciseList.add(new Exercise());
     }
 
-    //Method newExercise() takes in user inputs about an exercise (objName, exerciseName, sets, reps,
-    //weight, date) and adds it to the ArrayList, exerciseList.
+    //Method newExercise() takes in user inputs about an exercise (order in list, objName,
+    //exerciseName, sets, reps, weight, date) and adds it to the ArrayList, exerciseList.
     //Parameter: -e
-    public static void newExercise(String exercise, int sets, int reps, int weight, String date) {
-        //TODO
+    public static void newExercise(int exerciseNumber, String exercise, int sets, int reps, int weight, String date) {
         //adds properties to the Exercise object
-        getInstance().setExercise(exercise);
-        getInstance().changeSets(sets);
-        getInstance().changeReps(reps);
-        getInstance().setWeight(weight);
-        getInstance().setDate(date);
+        exerciseList.get(exerciseNumber).setExercise(exercise);
+        exerciseList.get(exerciseNumber).changeSets(sets);
+        exerciseList.get(exerciseNumber).changeReps(reps);
+        exerciseList.get(exerciseNumber).setWeight(weight);
+        exerciseList.get(exerciseNumber).setDate(date);
 
         //add the Exercise object to exerciseList
-        exerciseList.add(instance);
+        exerciseList.add(exerciseList.get(exerciseNumber));
     }
 
     //Method addNote() takes in user input as a String and adds it to the Exercise object
     //with the setNotes() method.
     //Parameter: -n
-    public static void addNote(Exercise object, String input) {
-        if (exerciseList.contains(object)){
-            object.setNotes(input);
+    public static void addNote(int exerciseNumber, String input) {
+        if (exerciseList.contains(exerciseList.get(exerciseNumber))){
+            exerciseList.get(exerciseNumber).setNotes(input);
         }
         else {
             System.out.println("That note doesn't have notes yet.");
@@ -104,11 +96,11 @@ public class ExerciseUI {
     }
 
 
-    //Method deleteExercise() takes in user input for an object name and removes it from the
+    //Method deleteExercise() takes in user input for an object number and removes it from the
     //ArrayList, exerciseList.
     //Parameter: -d
-    public static void deleteExercise(Exercise objectName) {
-        exerciseList.remove(objectName);
+    public static void deleteExercise(int exerciseNumber) {
+        exerciseList.remove(exerciseList.get(exerciseNumber));
     }
 
     //Method clearExercise() removes all elements from the ArrayList, exerciseList.
@@ -124,29 +116,43 @@ public class ExerciseUI {
     //Parameter: -s
     public static void spreadsheet() {
         //TODO
-        /*
-        to build the spreadsheet, you need the number of Exercise obj = rows
-        (1) takes
-         */
         AsciiTable table = new AsciiTable();
-        //String exercise, int sets, int reps, int weight, String date
         table.addRule();
-        table.addRow("Exercise", "Sets", "Reps", "Weight", "Date", "Notes");
-        table.addRule();
-        //table.addRow();
-        //table.addRule();
 
-        String render = table.render();
-        System.out.println(render);
+        int i = 0;
+        while(i <= exerciseList.size()) {
+            table.addRow();
+            table.addRule();
+            i++;
+
+        }
+
+
+
     }
 
     public static void main(String[] args) {
-        ExerciseUI exUI = new ExerciseUI();
-        new JCommander();
-        exUI.run();
-    }
 
-    public void run() {
-        //TODO
+        newInstance();
+        newInstance();
+        newInstance();
+
+        //newExercise(0, "Squat", 5, 5, 280, "9/18/2017");
+
+
+        for(int i = 0; i < exerciseList.size(); i++) {
+            System.out.println(exerciseList.get(i));
+        }
+
+        newExercise(0, "squat", 5, 5, 280, "9/20/2017");
+        System.out.println("Exercise " + exerciseList.get(0));
+        System.out.println("Exercise Name: " + exerciseList.get(0).getExercise());
+
+        addNote(0, "This is a note for exercise 0");
+        System.out.println("Exercise Note: " + exerciseList.get(0).getNotes());
+
+        spreadsheet();
+
+
     }
 }

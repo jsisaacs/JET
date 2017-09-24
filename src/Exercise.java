@@ -1,8 +1,5 @@
 //Joshua Isaacson
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Exercise {
     //variables
     String exerciseName;
