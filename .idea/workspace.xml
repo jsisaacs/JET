@@ -31,15 +31,15 @@
       <file leaf-file-name="ExerciseUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExerciseUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="168" column="24" lean-forward="true" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+            <state relative-caret-position="-1350">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#374#384#0" expanded="true" />
+                <element signature="e#518#528#0" expanded="true" />
                 <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
                 <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-                <element signature="e#4032#4033#0" expanded="true" />
-                <element signature="e#4080#4081#0" expanded="true" />
+                <element signature="e#4176#4177#0" expanded="true" />
+                <element signature="e#4224#4225#0" expanded="true" />
                 <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
               </folding>
             </state>
@@ -282,12 +282,12 @@
       <workItem from="1506117941842" duration="256000" />
       <workItem from="1506223070175" duration="4059000" />
       <workItem from="1506381980532" duration="2725000" />
-      <workItem from="1506439340109" duration="1705000" />
+      <workItem from="1506439340109" duration="7809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38520000" />
+    <option name="totallyTimeSpent" value="44624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,12 +310,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3159609" sideWeight="0.50477487" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.4952251" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.95307446" sideWeight="0.4952251" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24965894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -354,11 +354,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -370,11 +370,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -396,11 +396,11 @@
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -423,11 +423,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -450,11 +450,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -485,11 +485,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -512,11 +512,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -547,11 +547,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -574,11 +574,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -601,11 +601,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -628,11 +628,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -663,11 +663,11 @@
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -698,11 +698,11 @@
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -733,11 +733,11 @@
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -757,11 +757,11 @@
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -792,11 +792,11 @@
           <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -827,11 +827,11 @@
           <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -851,11 +851,11 @@
           <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>
@@ -902,15 +902,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExerciseUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="168" column="24" lean-forward="true" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+        <state relative-caret-position="-1350">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#384#0" expanded="true" />
+            <element signature="e#518#528#0" expanded="true" />
             <element signature="method#intro#0;class#ExerciseUI#0" expanded="false" />
             <element signature="method#help#0;class#ExerciseUI#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
             <element signature="method#clearExercise#0;class#ExerciseUI#0" expanded="false" />
           </folding>
         </state>

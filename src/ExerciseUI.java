@@ -3,8 +3,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import de.vandermeer.asciitable.*;
+import de.vandermeer.asciithemes.a7.A7_Grids;
+import de.vandermeer.asciithemes.a8.A8_Grids;
+import de.vandermeer.asciithemes.u8.U8_Grids;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 
 
 //This class takes the business logic from Exercise.java and creates the UI that the user
@@ -115,59 +119,50 @@ public class ExerciseUI {
         //TODO
         AsciiTable at = new AsciiTable();
         at.addRule();
-        at.addRow("Exercise Number", "Exercise", "Sets", "Reps", "Weight", "Date", "Notes");
+        AT_Row header =  at.addRow( "Number", "Exercise", "Sets", "Reps", "Weight", "Date", "", "Notes", "");
+        header.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
         at.addRule();
 
         while (true) {
             if (exerciseList.size() == 0) {
-                at.addRow("There are no exercises logged yet!");
+                AT_Row nullOutput = at.addRow( null,  null, null, null, null, null, null, null, "There are no exercises logged yet!");
+                nullOutput.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
                 at.addRule();
             }
             else {
-                for (int i = 0; i <= exerciseList.size(); i++) {
-                    at.addRow(exerciseList.get(i).getExercise(),
-                            exerciseList.get(i).getSets(),
-                            exerciseList.get(i).getReps(),
-                            exerciseList.get(i).getWeight(),
-                            exerciseList.get(i).getDate(),
-                            exerciseList.get(i).getNotes());
+                for (int i = 1; i <= exerciseList.size(); i++) {
+                    AT_Row output = at.addRow(
+                            i-1,
+                            exerciseList.get(i-1).getExercise(),
+                            exerciseList.get(i-1).getSets(),
+                            exerciseList.get(i-1).getReps(),
+                            exerciseList.get(i-1).getWeight(),
+                            exerciseList.get(i-1).getDate(),
+                            null,
+                            null,
+                            exerciseList.get(i-1).getNotes());
+                    output.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
                     at.addRule();
                 }
             }
             break;
         }
+        at.getContext().setGrid(A7_Grids.minusBarPlusEquals());
         System.out.println(at.render());
     }
 
     public static void main(String[] args) {
-        //newInstance();
+        intro();
+        help();
+
         newInstance();
-        //newInstance();
-        //newInstance();
-        newExercise(0, "Squat", 5, 5, 280, "9/18/2017");
-
-        //newExercise(1, "Squat", 5, 5, 280, "9/18/2017");
-        //newExercise(2, "Squat", 5, 5, 280, "9/18/2017");
-        //newExercise(3, "Squat", 5, 5, 280, "9/18/2017");
-        System.out.println(exerciseList.size());
-
-
-        for(int i = 0; i < exerciseList.size(); i++) {
-            System.out.println(exerciseList.get(i));
-        }
-
-
-        //System.out.println(exerciseList.size());
-
-        //newExercise(0, "squat", 5, 5, 280, "9/20/2017");
-        //System.out.println("Exercise " + exerciseList.get(0));
-        //System.out.println("Exercise Name: " + exerciseList.get(0).getExercise());
-
+        newExercise(0, "Squat", 5, 5, 280, "9/18/17");
         addNote(0, "This is a note for exercise 0");
-        System.out.println("Exercise Note: " + exerciseList.get(0).getNotes());
 
-        //spreadsheet();
+        newInstance();
+        newExercise(1, "Bench Press", 4, 8, 215, "9/21/17");
+        addNote(1, "Felt heavy, possibly stay at this weight and do more accessory movements.");
 
-
+        spreadsheet();
     }
 }
