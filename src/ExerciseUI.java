@@ -78,9 +78,6 @@ public class ExerciseUI {
         exerciseList.get(exerciseNumber).changeReps(reps);
         exerciseList.get(exerciseNumber).setWeight(weight);
         exerciseList.get(exerciseNumber).setDate(date);
-
-        //add the Exercise object to exerciseList
-        exerciseList.add(exerciseList.get(exerciseNumber));
     }
 
     //Method addNote() takes in user input as a String and adds it to the Exercise object
@@ -120,42 +117,55 @@ public class ExerciseUI {
         at.addRule();
         at.addRow("Exercise Number", "Exercise", "Sets", "Reps", "Weight", "Date", "Notes");
         at.addRule();
-        /*
-        while (true)
+
+        while (true) {
             if (exerciseList.size() == 0) {
                 at.addRow("There are no exercises logged yet!");
                 at.addRule();
             }
             else {
-                for (int i = 0; i <= exerciseList.length(); i++) {
+                for (int i = 0; i <= exerciseList.size(); i++) {
                     at.addRow(exerciseList.get(i).getExercise(),
-                              exerciseList.get(i).getSets(),
-                              exerciseList.get(i).getReps(),
-                              exerciseList.get(i).getWeight(),
-                              exerciseList.get(i).getDate(),
-                              exerciseList.get(i).getNotes);
+                            exerciseList.get(i).getSets(),
+                            exerciseList.get(i).getReps(),
+                            exerciseList.get(i).getWeight(),
+                            exerciseList.get(i).getDate(),
+                            exerciseList.get(i).getNotes());
                     at.addRule();
                 }
-         */
+            }
+            break;
+        }
         System.out.println(at.render());
     }
 
     public static void main(String[] args) {
+        //newInstance();
+        newInstance();
+        //newInstance();
+        //newInstance();
+        newExercise(0, "Squat", 5, 5, 280, "9/18/2017");
 
-        //newExercise(0, "Squat", 5, 5, 280, "9/18/2017");
+        //newExercise(1, "Squat", 5, 5, 280, "9/18/2017");
+        //newExercise(2, "Squat", 5, 5, 280, "9/18/2017");
+        //newExercise(3, "Squat", 5, 5, 280, "9/18/2017");
         System.out.println(exerciseList.size());
-        /*
+
+
         for(int i = 0; i < exerciseList.size(); i++) {
             System.out.println(exerciseList.get(i));
         }
 
-        newExercise(0, "squat", 5, 5, 280, "9/20/2017");
-        System.out.println("Exercise " + exerciseList.get(0));
-        System.out.println("Exercise Name: " + exerciseList.get(0).getExercise());
+
+        //System.out.println(exerciseList.size());
+
+        //newExercise(0, "squat", 5, 5, 280, "9/20/2017");
+        //System.out.println("Exercise " + exerciseList.get(0));
+        //System.out.println("Exercise Name: " + exerciseList.get(0).getExercise());
 
         addNote(0, "This is a note for exercise 0");
         System.out.println("Exercise Note: " + exerciseList.get(0).getNotes());
-        */
+
         //spreadsheet();
 
 
