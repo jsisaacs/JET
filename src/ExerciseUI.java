@@ -67,15 +67,13 @@ public class ExerciseUI {
                    "+---------------------------------------------------------+-----------------------+\n");
     }
 
-    //Method newInstance() creates an instance of Exercise when called.
-    public static void newInstance() {
-        exerciseList.add(new Exercise());
-    }
-
     //Method newExercise() takes in user inputs about an exercise (order in list, objName,
     //exerciseName, sets, reps, weight, date) and adds it to the ArrayList, exerciseList.
     //Parameter: -e
     public static void newExercise(int exerciseNumber, String exercise, int sets, int reps, int weight, String date) {
+        //creates an instance of Exercise when called
+        exerciseList.add(new Exercise());
+
         //adds properties to the Exercise object
         exerciseList.get(exerciseNumber).setExercise(exercise);
         exerciseList.get(exerciseNumber).changeSets(sets);
@@ -152,17 +150,16 @@ public class ExerciseUI {
     }
 
     public static void main(String[] args) {
-        intro();
-        help();
+        //intro();
+        //help();
 
-        newInstance();
         newExercise(0, "Squat", 5, 5, 280, "9/18/17");
         addNote(0, "This is a note for exercise 0");
 
-        newInstance();
         newExercise(1, "Bench Press", 4, 8, 215, "9/21/17");
         addNote(1, "Felt heavy, possibly stay at this weight and do more accessory movements.");
 
         spreadsheet();
+
     }
 }
