@@ -105,41 +105,46 @@ public class ExerciseUI {
 
     //Method clearExercise() removes all elements from the ArrayList, exerciseList.
     //Parameter: -c
-    public static void clearExercise(List input) {
+    public static void clearExercise() {
         /*
         (1) clear the entire ArrayList, exerciseList
          */
-        input.clear();
+        exerciseList.clear();
     }
 
     //Method spreadsheet() builds the spreadsheet from the elements of exerciseList.
     //Parameter: -s
     public static void spreadsheet() {
         //TODO
-        AsciiTable table = new AsciiTable();
-        table.addRule();
-
-        int i = 0;
-        while(i <= exerciseList.size()) {
-            table.addRow();
-            table.addRule();
-            i++;
-
-        }
-
-
-
+        AsciiTable at = new AsciiTable();
+        at.addRule();
+        at.addRow("Exercise Number", "Exercise", "Sets", "Reps", "Weight", "Date", "Notes");
+        at.addRule();
+        /*
+        while (true)
+            if (exerciseList.size() == 0) {
+                at.addRow("There are no exercises logged yet!");
+                at.addRule();
+            }
+            else {
+                for (int i = 0; i <= exerciseList.length(); i++) {
+                    at.addRow(exerciseList.get(i).getExercise(),
+                              exerciseList.get(i).getSets(),
+                              exerciseList.get(i).getReps(),
+                              exerciseList.get(i).getWeight(),
+                              exerciseList.get(i).getDate(),
+                              exerciseList.get(i).getNotes);
+                    at.addRule();
+                }
+         */
+        System.out.println(at.render());
     }
 
     public static void main(String[] args) {
 
-        newInstance();
-        newInstance();
-        newInstance();
-
         //newExercise(0, "Squat", 5, 5, 280, "9/18/2017");
-
-
+        System.out.println(exerciseList.size());
+        /*
         for(int i = 0; i < exerciseList.size(); i++) {
             System.out.println(exerciseList.get(i));
         }
@@ -150,8 +155,8 @@ public class ExerciseUI {
 
         addNote(0, "This is a note for exercise 0");
         System.out.println("Exercise Note: " + exerciseList.get(0).getNotes());
-
-        spreadsheet();
+        */
+        //spreadsheet();
 
 
     }
