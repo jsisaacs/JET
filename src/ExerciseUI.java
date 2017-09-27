@@ -111,14 +111,34 @@ public class ExerciseUI {
     private static void spreadsheet() {
         AsciiTable table = new AsciiTable();
         table.addRule();
-        AT_Row header =  table.addRow( "Number", "Exercise", "Sets", "Reps", "Weight", "Date", "", "Notes", "");
-        header.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
+        AT_Row header =  table.addRow(
+                "Number",
+                "Exercise",
+                "Sets",
+                "Reps",
+                "Weight",
+                "Date",
+                "",
+                "Notes",
+                "");
+        header.setTextAlignment(
+                de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
         table.addRule();
 
 
         if (exerciseList.size() == 0) {
-            AT_Row nullOutput = table.addRow( null,  null, null, null, null, null, null, null, "There are no exercises logged yet!");
-            nullOutput.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
+            AT_Row nullOutput = table.addRow(
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "There are no exercises logged yet!");
+            nullOutput.setTextAlignment(
+                    de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
             table.addRule();
         }
         else {
@@ -133,18 +153,20 @@ public class ExerciseUI {
                         null,
                         null,
                         exerciseList.get(i - 1).getNotes());
-                output.setTextAlignment(de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
+                output.setTextAlignment(
+                        de.vandermeer.skb.interfaces.transformers.textformat.TextAlignment.CENTER);
                 table.addRule();
             }
         }
-        table.getContext().setGrid(A7_Grids.minusBarPlusEquals());
+        table.getContext().setGrid(
+                A7_Grids.minusBarPlusEquals());
         System.out.println(table.render());
     }
 
     public static void main(String[] args) {
         //intro();
         //help();
-        /*
+
         newExercise(0, "Squat", 5, 5, 280, "9/18/17");
         addNote(0, "This is a note for exercise 0");
 
@@ -152,6 +174,5 @@ public class ExerciseUI {
         addNote(1, "Felt heavy, possibly stay at this weight and do more accessory movements.");
 
         spreadsheet();
-        */
     }
 }
