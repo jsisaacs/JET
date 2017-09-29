@@ -1,17 +1,23 @@
 //Joshua Isaacson, Fall 2017
 
+//Dependencies
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import de.vandermeer.asciitable.*;
 import de.vandermeer.asciithemes.a7.A7_Grids;
+import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
 
 //This class takes the business logic from Exercise.java and creates the UI that the user
 //interacts with.
+@ShellComponent
 public class ExerciseUI {
 
     private static List<Exercise> exerciseList = new ArrayList<>();
 
     //Method intro() returns an introduction screen.
+    @ShellMethod("Returns an introduction screen.")
     public static void intro() {
         System.out.println(
                 "                                   ,----, \n" +
@@ -161,10 +167,11 @@ public class ExerciseUI {
         System.out.println(table.render());
     }
 
-    public static void main(String[] args) {
-        //intro();
+    public static void main(String[] args) throws IOException {
+        intro();
         //help();
 
+        /*
         newExercise(0, "Squat", 5, 5, 280, "9/18/17");
         addNote(0, "This is a note for exercise 0");
 
@@ -175,5 +182,6 @@ public class ExerciseUI {
         addNote(2, "Super easy, had a nice pump");
 
         spreadsheet();
+        */
     }
 }
