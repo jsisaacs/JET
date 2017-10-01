@@ -4,7 +4,7 @@ JET is a command-line tool that helps you track your weightlifting progress.
 
 ## Getting Started
 
-Instructions
+Instructions for using the tool
 
 ### Prerequisites
 
