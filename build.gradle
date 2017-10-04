@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'ExerciseUI'
+mainClassName = 'files.ExerciseMain'
 
 sourceCompatibility = 1.8
 
@@ -17,13 +17,17 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'org.springframework.shell:spring-shell-starter:2.0.0.M1'
+    compile "org.springframework.shell:spring-shell:1.2.0.RELEASE"
     compile 'de.vandermeer:asciitable:0.3.2'
 }
+
 
 jar {
     baseName = 'JET'
     version = '0.0.1'
+
     manifest {
-        attributes 'Main-Class' : 'ExerciseUI'
+        attributes 'Main-Class' : 'files.ExerciseMain'
     }
+
 }
