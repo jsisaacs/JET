@@ -3,6 +3,7 @@
 package files;
 
 public class Exercise {
+    /*
     //variables
     String exerciseName;
     //weightUsed is in pounds
@@ -78,5 +79,5 @@ public class Exercise {
     public String getNotes() {
         return notes;
     }
-
+    */
 }

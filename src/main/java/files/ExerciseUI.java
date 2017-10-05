@@ -11,16 +11,17 @@ import de.vandermeer.asciithemes.a7.A7_Grids;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
+
 //This class takes the business logic from Exercise.java and creates the UI that the user
 //interacts with.
-@ShellComponent
+//@ShellComponent
 public class ExerciseUI {
 
-    private static List<Exercise> exerciseList = new ArrayList<>();
+    private List<Exercise> exerciseList = new ArrayList<>();
 
     //Method intro() returns an introduction screen.
-    @ShellMethod("Returns an introduction screen.")
-    public static void intro() {
+    //@ShellMethod("Returns an introduction screen.")
+    public void intro() {
         System.out.println(
                 "                                   ,----, \n" +
                         "         ,---._                  ,/   .`| \n" +
@@ -45,10 +46,11 @@ public class ExerciseUI {
                         "                                           ");
     }
 
+    /*
     //Method help() returns all available methods.
     //Parameter: -h
     @ShellMethod("Returns all available methods.")
-    public static void help() {
+    public void help() {
         System.out.println(
                 "+---------------------------------------------------------------------------------+\n" +
                         "|                                   HELP DESK                                     |\n" +
@@ -68,12 +70,13 @@ public class ExerciseUI {
                         "|  -s                                                     |  builds spreadsheet   |\n" +
                         "+---------------------------------------------------------+-----------------------+\n");
     }
+    */
 
     //Method newExercise() takes in user inputs about an exercise (order in list, objName,
     //exerciseName, sets, reps, weight, date) and adds it to the ArrayList, exerciseList.
     //Parameter: -e
-    @ShellMethod("Creates a new exercise with sets, reps, weight, and date.")
-    private static void newExercise(int exerciseNumber, String exercise, int sets, int reps, int weight, String date) {
+    //@ShellMethod("Creates a new exercise with sets, reps, weight, and date.")
+    private void newExercise(int exerciseNumber, String exercise, int sets, int reps, int weight, String date) {
         //creates an instance of Exercise when called
         exerciseList.add(new Exercise());
 
@@ -88,8 +91,8 @@ public class ExerciseUI {
     //Method addNote() takes in user input as a String and adds it to the Exercise object
     //with the setNotes() method.
     //Parameter: -n
-    @ShellMethod("Adds a note to any existing exercise.")
-    private static void addNote(int exerciseNumber, String input) {
+    //@ShellMethod("Adds a note to any existing exercise.")
+    private void addNote(int exerciseNumber, String input) {
         if (exerciseList.contains(exerciseList.get(exerciseNumber))){
             exerciseList.get(exerciseNumber).setNotes(input);
         }
@@ -102,15 +105,15 @@ public class ExerciseUI {
     //Method deleteExercise() takes in user input for an object number and removes it from the
     //ArrayList, exerciseList.
     //Parameter: -d
-    @ShellMethod("Deletes an existing exercise.")
-    public static void deleteExercise(int exerciseNumber) {
+    //@ShellMethod("Deletes an existing exercise.")
+    public void deleteExercise(int exerciseNumber) {
         exerciseList.remove(exerciseList.get(exerciseNumber));
     }
 
     //Method clearExercise() removes all elements from the ArrayList, exerciseList.
     //Parameter: -c
-    @ShellMethod("Removes all exercises.")
-    public static void clearExercise() {
+    //@ShellMethod("Removes all exercises.")
+    public void clearExercise() {
         /*
         (1) clear the entire ArrayList, exerciseList
          */
@@ -119,8 +122,8 @@ public class ExerciseUI {
 
     //Method spreadsheet() builds the spreadsheet from the elements of exerciseList.
     //Parameter: -s
-    @ShellMethod("Creates a spreadsheet filled with existing exercises.")
-    private static void spreadsheet() {
+    //@ShellMethod("Creates a spreadsheet filled with existing exercises.")
+    private void spreadsheet() {
         AsciiTable table = new AsciiTable();
         table.addRule();
         AT_Row header =  table.addRow(
@@ -176,7 +179,7 @@ public class ExerciseUI {
     }
 
 
-    public static void main(String[] args) throws IOException {
+    //public void main(String[] args) throws IOException {
         /*
         intro();
         help();
@@ -193,6 +196,6 @@ public class ExerciseUI {
 
         spreadsheet();
         */
-    }
+    //}
 
 }
