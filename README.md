@@ -1,30 +1,49 @@
-# JET
+# JET v1.0
 
 JET is a command-line tool that helps you track your weightlifting progress.
 
 ## Getting Started
 
-Instructions for using the tool
-
-### Prerequisites
-
-What does the user need to setup before using the software
+Run the following to download:
 
 ```
-Give examples
+git clone https://github.iu.edu/jsisaacs/JET.git
 ```
 
-### Installing
+### Running
 
-Step by step series of examples to show you how to get your dev env going
+To run JET, move into the directory and do this:
 
 ```
-Give examples
+java -jar target/JET-1.0-SNAPSHOT.jar
+```
+
+### How-To
+
+To get help about commands while in the system:
+```
+JET:> help
+```
+To create a new exercise:
+```
+JET:> new-exercise 0 "exerciseName" 5 10 315 "10/7/2017" "This is a note."
+```
+To delete a specific exercise:
+```
+JET:> delete-exercise 0
+```
+To clear the whole exercise ArrayList
+```
+JET:> clear-exercise 
+```
+To render the exercise spreadsheet
+```
+JET:> spreadsheet
 ```
 
 ## Built With
 
 * [ASCII Table](https://github.com/vdmeer/asciitable) - Used to format ASCII tables
 * [Spring Shell 2](https://github.com/spring-projects/spring-shell) - Spring based interactive shell
-* [Gradle](https://gradle.org) - Dependency management
+* [Maven](https://maven.apache.org) - Dependency management
 
