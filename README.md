@@ -38,13 +38,13 @@ JET:> delete-exercise 0
 ```
 &nbsp;
 
-To clear the whole exercise ArrayList
+To clear the whole exercise ArrayList:
 ```
 JET:> clear-exercise 
 ```
 &nbsp;
 
-To render the exercise spreadsheet
+To render the exercise spreadsheet:
 ```
 JET:> spreadsheet
 ```
