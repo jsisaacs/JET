@@ -24,18 +24,26 @@ To get help about commands while in the system:
 ```
 JET:> help
 ```
+&nbsp;
+
 To create a new exercise:
 ```
 JET:> new-exercise 0 "exerciseName" 5 10 315 "10/7/2017" "This is a note."
 ```
+&nbsp;
+
 To delete a specific exercise:
 ```
 JET:> delete-exercise 0
 ```
+&nbsp;
+
 To clear the whole exercise ArrayList
 ```
 JET:> clear-exercise 
 ```
+&nbsp;
+
 To render the exercise spreadsheet
 ```
 JET:> spreadsheet
