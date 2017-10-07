@@ -1,5 +1,1 @@
-JET.iml linguist-documentation
-.idea/* linguist-documentation
-.idea/compiler.xml linguist-documentation=false
- pom.xml linguist-documentation
- .mvn/* linguist-documentation
+linguist-language=Java
