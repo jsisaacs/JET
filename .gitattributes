@@ -1,4 +1,5 @@
-JET.iml/* linguist-documentation
-.mvn/* linguist-documentation
+JET.iml linguist-documentation
 .idea/* linguist-documentation
-pom.xml linguist-documentation
+.idea/compiler.xml linguist-documentation=false
+ pom.xml linguist-documentation
+ .mvn/* linguist-documentation
